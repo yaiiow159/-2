@@ -11,14 +11,25 @@
 
 
 .intro{
+    ul{
+        border-top:1px solid #000000;
+        padding-top: 32px;
+    }
 
-        .bar-intro{
-            &:after{
-                content:"";
-                width: 384px;
-                border: 1px solid #000;
-            }
+    li{
+        position: relative;
+        &::before{
+            content: "";
+            background-color: #891818;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: -38px;
         }
+    }
 
         .bar{
             background-image: url(../img/photo-1551852922-003865d4a3ba.png);
@@ -26,6 +37,10 @@
             width: 384px;
 
             margin-top: 40px;
+            margin-bottom: 24px; 
+        }
+
+        .bar-content{
             margin-bottom: 24px;
         }
 }

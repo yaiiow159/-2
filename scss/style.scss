@@ -1,0 +1,70 @@
+@import "reset";
+@import "utility";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+
+.header{
+    background-image: url(../img/photo-1552393700-42696fb89bfa.png);
+    height: 938px;
+}
+
+
+.intro{
+
+        .bar-intro{
+            &:after{
+                content:"";
+                width: 384px;
+                border: 1px solid #000;
+            }
+        }
+
+        .bar{
+            background-image: url(../img/photo-1551852922-003865d4a3ba.png);
+            height: 384px;
+            width: 384px;
+
+            margin-top: 40px;
+            margin-bottom: 24px;
+        }
+}
+
+.brand{
+    background-color: #000000;
+
+    p:nth-child(3){
+      margin-bottom: 68px;
+    }
+}
+
+.Works{
+    p{
+        font-size: 20px;
+        line-height: 42px;
+    }
+
+    li{
+        margin-right: 24px; 
+        margin-bottom: 16px;  
+    }
+}
+
+
+.footer {
+    padding: 64px 0 80px;
+    background-color: $dark;
+    color: $white;
+    
+    a{
+        color: $white;
+
+        &:hover{
+            transition:color .2s linear;
+            color: $gray;
+            font-weight: bold;
+        }
+    }
+}
+
+

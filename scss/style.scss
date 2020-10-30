@@ -3,39 +3,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 
 
+.container {
+    margin:0 auto;
+    max-width: 1200px;
+}
+
 
 .header{
     background-image: url(../img/photo-1552393700-42696fb89bfa.png);
     height: 938px;
+
+    a{
+        display: block;
+    }
+
+    h1 span{
+        font-size: 24px; 
+        line-height: 42px;
+        display: block;
+    }
 }
 
 
 .intro{
     ul{
-        border-top:1px solid #000000;
         padding-top: 32px;
-    }
-
-    li{
-        position: relative;
-        &::before{
-            content: "";
-            background-color: #891818;
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            margin-left: -38px;
-        }
     }
 
         .bar{
             background-image: url(../img/photo-1551852922-003865d4a3ba.png);
             height: 384px;
             width: 384px;
-
             margin-top: 40px;
             margin-bottom: 24px; 
         }
@@ -43,25 +41,44 @@
         .bar-content{
             margin-bottom: 24px;
         }
+
+        .bar-intro{
+            max-width: 384px;
+            border-top: 1px solid #000;
+            li{
+                position: relative;
+                &::before{
+                    content: "";
+                    background-color: #891818;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-left: -38px;
+                }
+        }
+    }
 }
 
 .brand{
     background-color: #000000;
 
-    p:nth-child(3){
+    p{
       margin-bottom: 68px;
     }
 }
 
-.Works{
+.works{
     p{
         font-size: 20px;
         line-height: 42px;
     }
 
-    li{
-        margin-right: 24px; 
-        margin-bottom: 16px;  
+    li { 
+    
+        margin-bottom: 16px;    
     }
 }
 
@@ -81,5 +98,4 @@
         }
     }
 }
-
 
